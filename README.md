@@ -39,15 +39,17 @@ npm run format
 # Launch a tool to inspect the bundle size
 npm run bundle-profile:analyze
 
-# Start the express server (run a production build first)
+# Serve the production build with sirv (run npm run build first)
 npm run start
 ```
 
 ## Configurations
 * [TypeScript Config](./tsconfig.json)
 * [Webpack Config](./webpack.common.js)
-* [Jest Config](./jest.config.js)
+* [Vitest Config](./vitest.config.ts)
 * [Editor Config](./.editorconfig)
+
+For coding agents and automation, see [AGENTS.md](./AGENTS.md) (validation commands, layout, and conventions).
 
 ## Raster image support
 
@@ -88,7 +90,7 @@ When importing CSS from a third-party package for the first time, you may encoun
 * For accessibility compliance, we use [react-axe](https://github.com/dequelabs/react-axe)
 * To keep our bundle size in check, we use [webpack-bundle-analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer)
 * To keep our code formatting in check, we use [prettier](https://github.com/prettier/prettier)
-* To keep our code logic and test coverage in check, we use [jest](https://github.com/facebook/jest)
+* To keep our code logic and test coverage in check, we use [Vitest](https://vitest.dev/)
 * To ensure code styles remain consistent, we use [eslint](https://eslint.org/)
 
 ## Multi environment configuration
