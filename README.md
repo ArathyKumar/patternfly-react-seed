@@ -83,6 +83,10 @@ body {
 }
 ```
 
+## PatternFly CSS
+For applications using Patternfly React, styles should be imported at the base level of the application with the following: `import '@patternfly/react-core/dist/styles/base.css';`.
+This step has already been done for you by the PatternFly Seed application, in the `src/app/index.tsx` file.
+
 ## Adding custom CSS
 When importing CSS from a third-party package for the first time, you may encounter the error `Module parse failed: Unexpected token... You may need an appropriate loader to handle this file typ...`. You need to register the path to the stylesheet directory in [stylePaths.js](./stylePaths.js). We specify these explicitly for performance reasons to avoid webpack needing to crawl through the entire node_modules directory when parsing CSS modules.
 
