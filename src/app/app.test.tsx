@@ -17,6 +17,12 @@ describe('App tests', () => {
     expect(screen.getByRole('button', { name: 'Global navigation' })).toBeVisible();
   });
 
+  it('should render a PatternFly Elements button on the dashboard', () => {
+    const { container } = render(<App />);
+
+    expect(container.querySelector('pf-v5-button')).toHaveTextContent('Primary action');
+  });
+
   it('should toggle the sidebar when clicking the nav-toggle button', async () => {
     const user = userEvent.setup();
 

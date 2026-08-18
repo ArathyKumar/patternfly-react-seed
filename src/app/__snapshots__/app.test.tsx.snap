@@ -326,6 +326,9 @@ exports[`App tests > should render default App component 1`] = `
           >
             Dashboard Page Title!
           </h1>
+          <pf-v5-button>
+            Primary action
+          </pf-v5-button>
         </section>
       </main>
     </div>
