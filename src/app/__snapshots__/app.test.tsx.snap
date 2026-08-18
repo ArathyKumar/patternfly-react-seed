@@ -325,6 +325,9 @@ exports[`App tests > should render default App component 1`] = `
           >
             Dashboard Page Title!
           </h1>
+          <custom-button
+            label="Dashboard action"
+          />
         </section>
       </main>
     </div>
